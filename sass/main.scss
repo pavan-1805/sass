@@ -1,0 +1,34 @@
+@import 'mixin';
+@import 'var';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: $direction;
+    text-align: $start-direction;
+}
+.header{
+    
+    width: 100vw;
+    height: 100vh;
+    @include flexProp;
+    background: $b-color;
+    h1{
+        @include textCode(1rem);
+        border: 2px solid brown;        
+        &:hover {
+            color: white;
+        }
+        &::after{
+            content: "...";
+        }
+    }
+    p{
+        @include textCode(0.5rem);
+    }
+}
+
+

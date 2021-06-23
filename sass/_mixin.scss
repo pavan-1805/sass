@@ -1,0 +1,13 @@
+@mixin flexProp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;     
+}
+
+@mixin textCode($letterSpacingVal) {
+    color: black;   
+    font-size: 2rem+1rem;
+    letter-spacing: $letterSpacingVal;
+    text-transform: capitalize;    
+}
